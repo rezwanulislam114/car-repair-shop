@@ -1,8 +1,8 @@
-a {
+.footer-link {
     text-decoration: none;
     color: rgb(184, 184, 184);
     margin: 0 10px;
 }
-a:hover {
+.footer-link:hover {
     color: white;
 }
