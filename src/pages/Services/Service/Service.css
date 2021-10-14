@@ -5,6 +5,10 @@
     margin: 15px;
     padding: 20px;
     text-align: center;
+    transition: .3s;
+}
+.service:hover {
+    box-shadow: 5px 5px 15px rgb(148, 148, 148);
 }
 .service-img {
     width: 300px;

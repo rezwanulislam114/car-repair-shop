@@ -7,6 +7,7 @@ import Login from './pages/Login/Login/Login';
 import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import ServiceInfo from './pages/ServiceInfo/ServiceInfo';
 import Services from './pages/Services/Services/Services';
+import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Login></Login>
           </Route>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </AuthProvider>
   );

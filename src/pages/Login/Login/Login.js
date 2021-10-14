@@ -1,10 +1,21 @@
 import React from 'react';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
+    const location = useLocation();
+    const history = useHistory();
     const { logInUsignGoogle } = useAuth();
+    const redirect_url = location.state?.from || "/"
+
+    const googleLogInHandle = () => {
+        logInUsignGoogle()
+            .then(result => {
+                history.push(redirect_url)
+            })
+    };
+
     return (
         <div>
             <div className="w-25 mx-auto mt-5">
@@ -22,7 +33,7 @@ const Login = () => {
                 <Button variant="danger d-block mx-auto mt-3">Sign In</Button>
                 <div className="text-center mt-4">
                     <p>or</p>
-                    <Button onClick={logInUsignGoogle} variant="danger">Sign In With Google</Button>
+                    <Button onClick={googleLogInHandle} variant="danger">Sign In With Google</Button>
                     <p className="mt-4">Haven't any accout? <Link to="/register">Sign Up.</Link></p>
                 </div>
             </div>
