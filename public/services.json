@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Tire Change",
+        "price": 300,
+        "time": "30 mins",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/88KgqqX/download.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tire Puncher",
+        "price": 500,
+        "time": "30 mins",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/y4VMcP9/images.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tire Customization",
+        "price": 500,
+        "time": "1 hour",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/Qj4kbjW/images-1.jpg"
+    },
+    {
+        "id": 4,
+        "name": "AC Configuration",
+        "price": 1000,
+        "time": "1.30 hour",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/GxyPTCf/download-1.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Sound System",
+        "price": 700,
+        "time": "50 mins",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/y8wfmZ2/Custom-car-audio-2-Ranjithsiji-CC-1024x768.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Full Color",
+        "price": 6000,
+        "time": "2 days",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/ypMkyyY/driver-changing-spare-tyre-after-accident-broken-royalty-free-image-852475670-1548440248.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Glass Modify",
+        "price": 2000,
+        "time": "2 hour",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/1zGtTtk/a5aef2dd9cc1faddaf23b7cb493a873d.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Body Kit Install",
+        "price": 16000,
+        "time": "6 hour",
+        "description": "It will take arround 30 mins. And we do it very carefully. We will be satisfied. Its our promise",
+        "img": "https://i.ibb.co/RyvL6d8/car-bodykit-750x375.jpg"
+    }
+]

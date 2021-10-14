@@ -3,6 +3,7 @@ import './App.css';
 import AuthProvider from './pages/AuthProvider/AuthProvider';
 import Home from './pages/Home/Home/Home';
 import Login from './pages/Login/Login/Login';
+import Services from './pages/Services/Services/Services';
 import Header from './pages/Shared/Header/Header';
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
           </Route>
           <Route path="/login">
             <Login></Login>

@@ -1,10 +1,11 @@
 import React from 'react';
-import { Container, Nav, Navbar, Spinner } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Container, Nav, Navbar, Spinner, Button } from 'react-bootstrap';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
-    const { user, isLoading } = useAuth();
+    const { user, isLoading, logOut } = useAuth();
+    const history = useHistory();
 
     return (
         <div>
@@ -12,12 +13,12 @@ const Header = () => {
                 isLoading ? <Spinner className="d-block mx-auto" animation="border" variant="danger" /> :
                     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                         <Container>
-                            <Navbar.Brand href="#home"> <span className="text-danger">RED</span>WILD</Navbar.Brand>
+                            <Navbar.Brand as={Link} to="/home"> <span className="text-danger">RED</span>WILD</Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto">
                                     <Nav.Link as={Link} to="/home">HOME</Nav.Link>
-                                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                                    <Nav.Link as={Link} to="/services">SERVICES</Nav.Link>
                                 </Nav>
                                 <Nav className="align-items-center">
                                     {
@@ -25,8 +26,8 @@ const Header = () => {
                                     }
                                     {
                                         (user.email || user.displayName) ?
-                                            <Nav.Link> Sign Out </Nav.Link> :
-                                            <Nav.Link as={Link} to="/login"> Sign In </Nav.Link>
+                                            <Button onClick={logOut} variant="danger" className="ms-2">Sign Out</Button> :
+                                            <Button onClick={() => history.push("/login")} variant="danger" className="ms-2">Sign In</Button>
                                     }
                                 </Nav>
                             </Navbar.Collapse>

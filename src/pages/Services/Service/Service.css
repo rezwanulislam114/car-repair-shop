@@ -1,0 +1,21 @@
+.service {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(206, 206, 206);
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+}
+.service-img {
+    width: 300px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width:700px) {
+    .service-img {
+        width: 250px;
+        height: 130px;
+    }
+}
